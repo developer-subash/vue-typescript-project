@@ -9,16 +9,15 @@
 
 import { Component, Prop, Vue } from 'vue-property-decorator';
 @Component
-export default class Home extends Vue{
+export default class Home extends Vue {
 
     private item = {
-        title:'string',
-    }
+        title: 'string',
+    };
 
-    constructor()
-    {
+    constructor() {
         super();
-        this.item.title = "Hello from the Home Page";
+        this.item.title = 'Hello from the Home Page';
     }
 
 }
