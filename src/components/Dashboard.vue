@@ -10,10 +10,8 @@
     </div>
 </template>
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator';
-@Component 
-export default class Dashbaord extends Vue{}
-
-
+import { Component, Vue } from "vue-property-decorator";
+@Component
+export default class Dashbaord extends Vue {}
 </script>
 
