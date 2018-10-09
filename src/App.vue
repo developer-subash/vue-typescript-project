@@ -1,20 +1,19 @@
 <template>
-  <div> 
-   <Dashboard/>
-  </div>
+<div><router-view/></div>
+
+
 </template>
 <script lang="ts">
-
-import Dashboard from './Modules/Authentication/_container/index.vue';
+import Dashboard from "./Modules/Authentication/_container/index.vue";
 export default {
   components: {
-    Dashboard,
+    Dashboard
   }
 };
-
 </script>
 
 
 <style lang="scss">
-@import "./assets/css/style.css";
+@import "../public/css/style.css";
+@import "../public/css/responsive.css";
 </style>

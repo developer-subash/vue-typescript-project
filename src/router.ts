@@ -1,34 +1,25 @@
 import Vue from "vue";
 import Router from "vue-router";
-import Home from "@/components/Home.vue";
-import About from "@/components/About.vue";
-import Test from "@/components/Test.vue";
+import Dashboard from "./views/Home.vue";
+import peopleRoutes from "@/Modules/Authentication/_routes/routes";
 
 Vue.use(Router);
 
+const baseRoutes: any = [
+  {
+    path: "/dashboard",
+    name: "dashboard",
+    title: "Dashboard",
+    icon: "fa-tachometer",
+    component: Dashboard
+  },
+  {
+    path: "*",
+    redirect: { name: "dashboard" }
+  }
+];
+
+const routes = baseRoutes.concat(peopleRoutes);
 export default new Router({
-  
-  base: process.env.BASE_URL,
-  routes: [
-    {
-      path: "/",
-      name: "home",
-      component: Home
-    },
-    {
-      path: "/test",
-      name: "test",
-      component: Test
-    },
-    {
-      path: "/about",
-      name: "about",
-      component: About
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      // component: () =>
-      //   import(/* webpackChunkName: "about" */ "./components/About.vue")
-    }
-  ]
+  routes
 });

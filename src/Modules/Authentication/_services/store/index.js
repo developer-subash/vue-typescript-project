@@ -1,6 +1,5 @@
-import actions from './actions';
-import getters from './getters';
-import mutations from './mutations';
+import getters from "./getters";
+
 const state = {
   products: [
     {
@@ -23,14 +22,12 @@ const state = {
       email: "ram@g.com",
       gender: "male",
       age: 3
-    },
+    }
   ]
 };
 
 export default {
   namespaced: true,
   state,
-  actions,
-  getters,
-  mutations
+  getters
 };

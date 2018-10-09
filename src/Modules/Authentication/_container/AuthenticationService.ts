@@ -4,7 +4,7 @@
 class AuthenticationService {
   constructor() {}
 
-  addUser() {
+  protected addUser() {
     return "hello from Authentication Class";
   }
 }
