@@ -1,27 +1,23 @@
 <template>
 <div>
     <h2>
-       hello subash
+       {{item.title}}
     </h2>
 </div>
 </template>
 
 <script lang="ts">
-
-import { Component, Prop, Vue } from 'vue-property-decorator';
-@Component
+import { Component, Prop, Vue } from "vue-property-decorator";
+@Component({})
 export default class About extends Vue {
+  item = {
+    title: "string"
+  };
 
-    private item = {
-        title: 'string',
-    };
-
-    constructor() {
-        super();
-        this.item.title = 'Hello from the About Component';
-    }
-
+  constructor() {
+    super();
+    this.item.title = "Hello from the About Component";
+  }
 }
-
-
 </script>
+
