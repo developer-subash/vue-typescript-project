@@ -1,24 +1,31 @@
 import Test from "../_components/test.vue";
 import Hello from "../_components/Hello.vue";
+import AdminLogin from "../_components/Login.vue";
+import RegisterAdmin from "../_components/Register.vue";
+import ForgetPassword from "../_components/ForgetPassword.vue";
 
 export default [
   {
-    path: "test",
-    name: "test",
-    component: Test,
-
-    redirect: { name: "test-login" },
+    path: "admin",
+    name: "admin",
+    component: AdminLogin,
+    redirect: { name: "admin-login" },
     children: [
       {
-        path: "tests",
-        name: "test-login",
-        component: Test
+        path: "login",
+        name: "admin-login",
+        component: AdminLogin,
       },
       {
-        path: "Hello",
-        name: "test-welcome",
-        component: Hello
-      }
+        path: "register",
+        name: "admin-register",
+        component: RegisterAdmin
+      },
+      {
+        path: "forgetPassword",
+        name: "admin-forgetpassword",
+        component: ForgetPassword
+      },
     ]
   }
 ];

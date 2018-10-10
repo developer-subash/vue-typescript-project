@@ -24,21 +24,18 @@
     
                     <div class="form-group">
     
-                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                      <input type="email" class="form-control" aria-describedby="emailHelp"
                         placeholder="Username">
                      
-    
                     </div>
 
                     
     
                     <div class="form-group">
     
-                      <input type="password" class="form-control password" id="exampleInputPassword1" placeholder="Password">
+                      <input type="password" class="form-control password"  placeholder="Password">
                         <p>
-                          
-                           <router-link to="/ForgetPassword">Forgot password?</router-link>
-                                <!-- <a href="forgot-password.html" class="link"></a> -->
+                           <router-link to="/admin/forgetPassword" class="link">Forgot password?</router-link>
                         </p>
                     
                     </div>

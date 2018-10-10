@@ -3,9 +3,9 @@
     
     <!-- <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/> -->
      <div id="nav">
-      <router-link :to="{name: 'test-welcome'}">Home</router-link> |
-      <router-link  :to="{name: 'test-login'}">About</router-link>
-      <router-view></router-view>
+      <router-link :to="{name: 'admin'}">Admin Login</router-link> |
+      <router-link  :to="{name: 'admin-register'}">About</router-link>
+      
     </div>
   </div>
 </template>

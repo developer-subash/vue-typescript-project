@@ -9,16 +9,22 @@ import { mapGetters } from "vuex";
 import store from "../_services/store/index.js";
 import { Component, Prop, Vue } from "vue-property-decorator";
 import Login from "../_components/Login.vue";
-import { userService } from "../_services/api";
+import { userApiService } from "../_services/api";
 @Component({
   components: {
     Login
   }
 })
 export default class Index extends Vue {
+  private userobj: any;
   constructor() {
     super();
+    this.userobj = userApiService.addUser();
+    
   }
+    protected mounted() {
+     
+    }
 
   protected created() {
     const STORE_KEY = "$_auth";
