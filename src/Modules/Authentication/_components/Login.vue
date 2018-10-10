@@ -1,7 +1,6 @@
 <template>  
    <div>
-    
-     <main>
+      <main>
         <div class="container-fluid">
             <div class="row">
     
@@ -24,9 +23,10 @@
     
                     <div class="form-group">
     
-                      <input type="email" class="form-control" aria-describedby="emailHelp"
+                      <input type="email" class="form-control"  aria-describedby="emailHelp"
                         placeholder="Username">
                      
+    
                     </div>
 
                     
@@ -35,20 +35,19 @@
     
                       <input type="password" class="form-control password"  placeholder="Password">
                         <p>
-                           <router-link to="/admin/forgetPassword" class="link">Forgot password?</router-link>
+                                <router-link :to="{name:'admin-forgetpassword'}" class="link">Forgot password?</router-link>
                         </p>
                     
                     </div>
                      
                     <div class="spacing">
-                       <!-- <a href="" class="default-btn">Login</a> -->
-                       <router-link class="default-btn" to="/login">Login</router-link>
+                       <a href="index.html" class="default-btn">Login</a>
                     </div>
                    
-
+    
                     <p>Don't have an account? 
-                      <!-- <a href="signup.html" class="link">Register</a></p> -->
-                      <router-link to="/register">Register</router-link></p>
+                      <router-link :to="{ name:'admin-register'}" class="link">Register</router-link>
+                      </p>
                   </form>
     
                 </div>
@@ -59,6 +58,7 @@
     
           </div>
     </main>
+     
    </div> 
 </template>
 <script lang="ts">
@@ -71,7 +71,7 @@ export default class Login extends Vue {
 
   constructor() {
     super();
-    // console.log(authService.addUser());
+    console.log(authService.addUser());
   }
 }
 </script>

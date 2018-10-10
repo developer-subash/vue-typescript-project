@@ -27,9 +27,7 @@
                                 placeholder="example@email.com">
                              
             
-                            </div>
-            
-                            
+                            </div>              
                              
                             <div class="spacing">
                                <a href="dashboard-home.html" class="default-btn">Send email</a>
@@ -37,8 +35,8 @@
                            
             
                             <p>Don't have an account? 
-                                <!-- <a href="" class="link">Sign up</a> -->
-                                <router-link to="./register">Sign up</router-link>
+                                
+                                <router-link :to="{ name:'admin-register'}">Sign up</router-link>
                                 </p>
                           </form>
             

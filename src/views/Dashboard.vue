@@ -1,11 +1,16 @@
 <template>
     <div>
-        <router-link to="/login">admin</router-link>
+      <TheNavbar />
     </div>
 </template>
 <script lang="ts">
 import { Component, Prop, Vue } from "vue-property-decorator";
-@Component({})
+import TheNavbar from "../src/components/TheNavbar.vue";
+@Component({
+  components: {
+    TheNavbar
+  }
+})
 export default class Dashbaord extends Vue {}
 </script>
 

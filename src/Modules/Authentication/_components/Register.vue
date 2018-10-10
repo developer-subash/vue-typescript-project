@@ -1,6 +1,7 @@
 <template>
     <div>
-       <main>
+      
+         <main>
         <div class="container-fluid">
             <div class="row">
     
@@ -23,7 +24,7 @@
     
                     <div class="form-group">
     
-                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                      <input type="email" class="form-control" aria-describedby="emailHelp"
                         placeholder="Example@email.com">
                      
     
@@ -31,7 +32,7 @@
 
                     <div class="form-group">
     
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        <input type="email" class="form-control"  aria-describedby="emailHelp"
                           placeholder="First name">
                        
       
@@ -39,7 +40,7 @@
 
                       <div class="form-group">
     
-                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                          <input type="email" class="form-control" aria-describedby="emailHelp"
                             placeholder="Second name">
                          
         
@@ -47,17 +48,19 @@
     
                     <div class="form-group">
     
-                      <input type="password" class="form-control password" id="exampleInputPassword1" placeholder="Password">
+                      <input type="password" class="form-control password"  placeholder="Password">
     
                      
                     </div>
                      
                     <div class="spacing">
+
                        <a href="index.html" class="default-btn">Register</a>
                     </div>
                    
     
-                    <p>Already have an account? <router-link to="/login" class="link">Log in</router-link> </p>
+                    <p>Already have an account? 
+                      <router-link class="link" :to="{name:'admin'}">Log in</router-link></p>
                   </form>
     
                 </div>
@@ -73,7 +76,7 @@
 </template>
 <script lang="ts">
 import { Component, Prop, Vue } from "vue-property-decorator";
-@Component({})
+@Component
 export default class Register extends Vue {
   private title: string = "hello";
 

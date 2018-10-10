@@ -1,12 +1,13 @@
 <template>
   <div class="home">
     
-    <!-- <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/> -->
+  
      <div id="nav">
       <router-link :to="{name: 'admin'}">Admin Login</router-link> |
-      <router-link  :to="{name: 'admin-register'}">About</router-link>
+      <router-link  :to="{name: 'admin-register'}">Register</router-link>
       
     </div>
+    <router-view />
   </div>
 </template>
 

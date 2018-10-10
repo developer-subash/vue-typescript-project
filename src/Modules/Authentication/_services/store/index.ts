@@ -1,7 +1,5 @@
-import getters from "./getters";
-
-const state = {
-  products: [
+class AutheticationStore {
+  public products = [
     {
       id: 1,
       name: "suabsh",
@@ -23,11 +21,9 @@ const state = {
       gender: "male",
       age: 3
     }
-  ]
-};
+  ];
 
-export default {
-  namespaced: true,
-  state,
-  getters
-};
+  constructor() {}
+}
+
+export const authstore = new AutheticationStore();

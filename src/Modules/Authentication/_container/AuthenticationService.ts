@@ -1,11 +1,12 @@
-// import { injectable } from 'inversify';
+import { authstore } from "../_services/store/";
+import { getters } from "../_services/store/getters";
 
-// @injectable()
 class AuthenticationService {
   constructor() {}
 
   protected addUser() {
-    return "hello from Authentication Class";
+    return getters;
   }
 }
+
 export const authService = new AuthenticationService();
